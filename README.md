@@ -1,4 +1,1 @@
-grafera
-=======
-
-easy way to build graphics
+just a bad idea
