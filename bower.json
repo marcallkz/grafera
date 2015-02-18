@@ -1,0 +1,24 @@
+{
+  "name": "grafera",
+  "version": "0.0.0",
+  "authors": [
+    "Lucas Marçal <lucasmarcaldossantos@gmail.com>"
+  ],
+  "description": "an easy way to create graphics",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chartjs": "~0.2.0",
+    "fontawesome": "~4.2.0"
+  },
+  "devDependencies": {
+    "modernizr": "~2.8.3"
+  }
+}

@@ -1,0 +1,206 @@
+.header
+{
+	padding: 5px 10px;
+	border-bottom: #EFEFEF 1px solid;
+	margin-bottom: 7%;
+	position: fixed;
+	display: block;
+	background: #FFF;
+	width: 100%;
+}
+
+.header-logo
+{
+	font-size: 1.7em;
+	letter-spacing: .2rem;
+	font-weight: bold;
+}
+
+.social
+{
+	float: right;
+}
+
+.chart
+{
+	display: block;
+	margin: 0 auto;
+}
+
+.content
+{
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+
+.chart-wrapper
+{
+	overflow-x: auto;
+}
+
+.button
+{
+	cursor: pointer;
+	width: 50px;
+	text-align: center;
+	font-size: .8em !important;
+}
+
+.button:hover,
+.button:focus
+{
+	background: #EAEAEA;
+}
+
+.button:after,
+.button:before
+{
+	display: block;
+	margin-bottom: 4px;
+	font-size: 2rem;
+}
+
+.toolbox
+{
+	width: 270px;
+	margin: 0 auto;
+}
+
+.modal-background
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.95);
+	top: 0;
+	opacity: 0.9;
+	overflow: none;
+}
+
+.modal
+{
+	top:0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.modal.is-visible
+{
+	display: block;
+}
+
+.modal-content
+{
+	width: 70%;
+	height: 70%;
+	background: #FFF;
+	margin: auto;
+	overflow-y: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.dataset 
+{
+	display: inline-block;
+	width: 200px;
+	margin: 10px;
+	padding: 5px;
+	border: #EEE solid 1px;
+	position: relative;
+}
+
+.input
+{
+	display: block;
+}
+
+.label
+{
+	display: block;
+}
+
+.edit
+{
+	margin: 0 auto;
+	display: block !important;
+}
+
+.dataset-remove
+{
+	position: absolute;
+	right: 2px;
+	top: 0;
+	color: #FFADAD;
+}
+
+.action-panel
+{
+	float: right;
+	height: 50px;
+	width: 20px;
+}
+
+.close,
+.add
+{
+	font-size: 1.5em;
+	cursor: pointer;
+	font-weight: bolder;
+}
+
+
+
+.action-button
+{
+	float: right;
+	color: #F00;
+	margin: 0 10px;	
+}
+
+.dataset-remove:hover,
+.dataset-remove:focus
+{
+	color: #D00;
+}
+
+@media print {
+	.header
+	{
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	.modal-content
+	{
+		width: 75%;
+		height: 75%;
+	}
+}
+
+@media (max-width: 600px) {
+	.modal-content
+	{
+		width: 80%;
+		height: 80%;
+	}
+}
+
+@media (max-width: 460px) {
+	.modal-content
+	{
+		width: 95%;
+		height: 95%;
+	}
+
+	.dataset
+	{
+		display: block;
+		margin: 10px auto;
+	}
+}

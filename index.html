@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<title>Grafera</title>
+		<link rel="stylesheet" type="text/css" href="app/css/styles.min.css">
+		<link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="social">
+				<a href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=http%3A%2F%2Fgrafera.com.br&pubid=ra-53fb9aaf668c0c3c&ct=1&title=Grafera&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/facebook.png" border="0" alt="Facebook"/></a>
+				<a href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=http%3A%2F%2Fgrafera.com.br&pubid=ra-53fb9aaf668c0c3c&ct=1&title=Grafera&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/twitter.png" border="0" alt="Twitter"/></a>
+				<a href="https://api.addthis.com/oexchange/0.8/forward/google_plusone_share/offer?url=http%3A%2F%2Fgrafera.com.br&pubid=ra-53fb9aaf668c0c3c&ct=1&title=Grafera&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/google_plusone_share.png" border="0" alt="Google+"/></a>
+			</div>
+			<span class="header-logo">GRAFERA</span>
+		</header>
+		<section class="content">
+			<div class="chart-wrapper">
+				<canvas class="js-graph chart" width="800" height="400"></canvas>
+			</div>
+		</section>
+		<section class="toolbox">
+			<span class="button js-edit fa fa-database">DADOS</span>
+			<span data-chart="bar" class="button js-chart active-chart fa fa-bar-chart">BARRAS</span>
+			<span data-chart="line" class="button js-chart fa fa-line-chart">LINHAS</span>
+			<span data-chart="radar" class="button js-chart fa fa-area-chart">RADAR</span>
+			<span data-chart="pie" class="button js-chart fa fa-pie-chart">PIZZA</span>
+		</section>
+
+		<section class="modal js-modal">
+			<div class="modal-background js-modal-close"></div>
+			<section class="modal-content">
+				<section class="js-graph-dataset">
+					<div class="action-panel">
+						<span class="js-modal-close action-button close">X</span>
+						<span class="js-add add action-button">+</span>
+					</div>
+				</section>
+			</section>
+		</section>
+
+		<script src="bower_components/chartjs/Chart.js"></script>
+		<script src="bower_components/modernizr/modernizr.js"></script>
+		<script src="app/js/main.min.js"></script>
+	</body>
+</html>
